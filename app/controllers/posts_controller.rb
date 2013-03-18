@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
-  layout :_header
+ 
+ 
+  @show_header = true
+  #@show_footer = true
+  
   http_basic_authenticate_with :name => "dhh", :password => "secret", :except => [:index, :show]
  
   # GET /posts

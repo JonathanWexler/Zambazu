@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Zambazu</title>
- <%= stylesheet_link_tag "application" %>
+  <title>Blog</title>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body style="background: #EEEEEE;">
-
-<%= yield %>
-
+<div class= "container">
+  <div class="row">
+    <div class="span9"><%= yield %></div>
+    <div class="span3">
+      <h1>About Us</h1>
+      JONJON JON JOJNJJJDSDsdbsdns jd s jdb sj dbsjd s jd sj djs jd s dj sjd js d
+    </div>
+  </div>
+</div> 
 </body>
 </html>
