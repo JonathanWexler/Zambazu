@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Zambazu| by Jonathan Wexler</title>
   <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body style="background: #EEEEEE;">
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <div id="user_nav" class="notices pull-right">
+        <%= link_to 'Login with Facebook', '/auth/facebook/' %>
+        <%= link_to 'Login with Twitter', '/auth/twitter/' %>
+      </div>
+ 
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+ 
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="index">Zambazu</a>
+ 
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse collapse">
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+        <ul class="nav">
+          <li><%= link_to "Home", "index" %></li>
+          <li><%= link_to "Posts", posts_path %></li>
+          <li><%= link_to "Comments"%></li>
+        </ul>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+
 <div class= "container">
   <div class="row">
     <div class="span9"><%= yield %></div>
     <div class="span3">
       <h1>About Us</h1>
-      JONJON JON JOJNJJJDSDsdbsdns jd s jdb sj dbsjd s jd sj djs jd s dj sjd js d
+      <br>
+      This is a site created by Jonathan Wexler for his Independent study under Tim Hickey.
     </div>
   </div>
 </div> 
