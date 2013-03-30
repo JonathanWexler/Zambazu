@@ -1,16 +1,20 @@
 Zambazu::Application.routes.draw do
   #match 'auth/:provider/callback' =&gt; 'authentications#create' #, to: 'sessions#create'
-  match 'auth/twitter/callback' => 'sessions#create'
+  match 'auth/:provider/callback' => 'sessions#create'
+  # match 'auth/facebook/callback' => 'sessions#create'
+  match 'auth/google_oauth2/callback' => 'sessions#create'
+
   match 'auth/failure', to: redirect("/")
-  match 'signout', to: 'sessions#destroy', as: 'signout'
+  match "/signout" => "sessions#destroy", :as => :signout
 
   #devise_for :users
-
+  resources :game
   resources :posts do
     resources :comments
   end
 
   get "home/index"
+  match 'quiz' => 'home#quiz'
   match 'index' => 'home#index'
   
   # The priority is based upon order of creation:
