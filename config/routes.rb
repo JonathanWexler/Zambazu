@@ -2,7 +2,7 @@ Zambazu::Application.routes.draw do
   #match 'auth/:provider/callback' =&gt; 'authentications#create' #, to: 'sessions#create'
   match 'auth/:provider/callback' => 'sessions#create'
   # match 'auth/facebook/callback' => 'sessions#create'
-  match 'auth/google_oauth2/callback' => 'sessions#create'
+  # match 'auth/google_oauth2/callback' => 'sessions#create'
 
   match 'auth/failure', to: redirect("/")
   match "/signout" => "sessions#destroy", :as => :signout
