@@ -1,0 +1,50 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  question: "Grand Central Terminal, Park Avenue, New York is the world's"
+  first: "largest railway station"
+  second: "highest railway station"
+  third: "longest railway station"
+  fourth: "None of the above"
+  answer: "first"
+
+two:
+  question: "Entomology is the science that studies"
+  first: "Behavior of human beings"
+  second: "Insects"
+  third: "The origin and history of technical and scientific terms"
+  fourth: "The formation of rocks"
+  answer: "first"
+
+three:
+  question: "Eritrea, which became the 182nd member of the UN in 1993, is in the continent of"
+  first: "Asia"
+  second: "Africa"
+  third: "Europe"
+  fourth: "Australia"
+  answer: "first"
+
+four:
+  question: "Garampani sanctuary is located at"
+  first: "Junagarh, Gujarat"
+  second: "Diphu, Assam"
+  third: "Kohima, Nagaland"
+  fourth: "Gangtok, Sikkim"
+  answer: "first"
+
+five:
+  question: "For which of the following disciplines is Nobel Prize awarded?"
+  first: "Physics and Chemistry"
+  second: "Physiology or Medicine"
+  third: "Literature, Peace and Economics"
+  fourth: "All of the above"
+  answer: "first"
+
+six:
+  question: "Hitler party which came into power in 1933 is known as"
+  first: "Labour Party"
+  second: "Nazi Party"
+  third: "Ku-Klux-Klan"
+  fourth: "Democratic Party"  
+  answer: "first"
+  
