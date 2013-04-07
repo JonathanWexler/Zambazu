@@ -17,22 +17,20 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-identity'
 gem 'oauth2'
 
-group :production, :staging do
-  gem "pg"
+gem 'sqlite3', :group => [:development, :test]
+group :production do
+  gem 'thin'
+  gem 'pg'
 end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development, :test do
-  # gem 'sqlite3', :require => 'sqlite3'
-end
-
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'therubyracer'
+  gem 'therubyracer', '~> 0.11.4'
   gem 'libv8'	
   gem 'less-rails'
   gem 'sass-rails',   '~> 3.2.3'
