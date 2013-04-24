@@ -17,7 +17,10 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-identity'
 gem 'oauth2'
 
-gem 'sqlite3', :group => [:development, :test]
+group :development do
+gem 'sqlite3'
+
+end
 group :production do
   gem 'thin'
   gem 'pg'
