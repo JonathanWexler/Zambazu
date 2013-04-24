@@ -16,9 +16,10 @@ gem 'omniauth-twitter'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-identity'
 gem 'oauth2'
+gem 'heroku'
 
 group :development do
-gem 'sqlite3'
+gem 'pg'
 
 end
 group :production do
